@@ -1,0 +1,11 @@
+<p>
+  <strong>title:</strong>
+  <%= @articulo.title %>
+</p>
+
+<p>
+  <strong>title:</strong>
+  <%= @articulo.text %>
+</p>
+<%= link_to 'Editar', edit_articulo_path(@articulo) %>
+<%= link_to 'Regresar', :action=>'new', controller: 'articulos' %>
